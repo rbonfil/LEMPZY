@@ -1,16 +1,13 @@
 #!/bin/bash 
-##############################################################
-#        Function to check and restart a service             #
-#        Created and Developed by a Lazy Sysadmin            #
-#                X@rbonfil  info@rbonfil.me                  #
-#                                                            #
-#    Configure Cron                                          #
-#    chmod +x check_service.sh                               #
-#    crontab -e                                              #
-#    * * * * * /home/check_service.sh   (Every Minute)       #
-#    */5 * * * * /home/check_service.sh (Every 5 Minutes)    #
-#                                                            #
-##############################################################
+# Function to check and restart a service
+# Created and Developed by a Lazy Sysadmin
+# X@rbonfil  info@rbonfil.me
+#
+# Configure Cron
+# chmod +x check_service.sh
+# crontab -e
+# * * * * * /home/check_service.sh   (Every Minute)
+# */5 * * * * /home/check_service.sh (Every 5 Minutes)
 
 check_and_restart() {
     local service=$1
